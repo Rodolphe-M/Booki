@@ -150,6 +150,7 @@ nav a:hover {
 }
 
 /* fin filtre recherche*/
+/* debut partie bas header */
 
 .phrase-info {
     display: flex;
@@ -177,7 +178,80 @@ nav a:hover {
     font-size: 19px;
 }
 
+/* fin partie bas header */
+/* debut section hebergement */
+
+.section-hebergement {
+    font-weight: 700;
+    width: 880px;
+    height: 626px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section-hebergement h2 {
+    width: 100%;
+    height: 26px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.section-hebergement a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.section-hebergement a:hover {
+    color:#0065FC
+}
+
+.hotel-marseille {
+    height: 199px;
+    background: white;
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 6Px 6px 25px rgba(0,0,0,0.5);
+}
+
 .hotel-marseille img {
-    width: 150px;
-    height: 150px;
+    width: 92%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.hotel-marseille span {
+    color:#DEEBFF;
+}
+
+.hotel-marseille h4 {
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.hotel-marseille p {
+    font-size: 14px;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+
+.note-star {
+    font-size:small;
+    color:#0065FC;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 2px;
 }
