@@ -1,5 +1,10 @@
+html {
+    max-width: 1400px;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 35px;
 }
 
 h1,
@@ -182,9 +187,8 @@ nav a:hover {
 /* debut section hebergement */
 
 .section-hebergement {
-    font-weight: 700;
     width: 880px;
-    height: 626px;
+    height: 625px;
     background-color: #F2F2F2;
     border-radius: 20px;
     display: flex;
@@ -205,7 +209,7 @@ nav a:hover {
     font-size: 18px;
     justify-content: flex-start;
     width: 100%;
-    padding-left: 20px;
+    padding: 20px;
 }
 
 .section-hebergement a:hover {
@@ -228,7 +232,7 @@ nav a:hover {
     padding-top: 10px;
 }
 
-.hotel-marseille span {
+span {
     color:#DEEBFF;
 }
 
@@ -249,9 +253,117 @@ nav a:hover {
 
 
 .note-star {
-    font-size:small;
+    font-size: small;
     color:#0065FC;
     padding-left: 10px;
     margin-top: 0px;
     margin-bottom: 2px;
+}
+
+/* fin section hebergement */
+
+.section-hebergement-aside {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+/* debut section populaire */
+
+aside {
+    width: 420px;
+    height: 625px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-hotel-populaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titre-aside {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.titre-aside ::before {
+    position: relative;
+    top: 25px;
+    right: 10px;
+    color: #0065FC;
+}
+
+.hotel-populaire {
+    width: 343px;
+    height: 144px;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 6Px 6px 25px rgba(0,0,0,0.5);
+}
+
+.hotel-populaire img {
+    width: 137px;
+    height: 124px;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.hotel-populaire p {
+
+}
+
+/* fin partie hotel populaire */
+/* debut section activité */
+
+.section-activites {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titre-activites {
+    margin: 10px 0 10px 0;
+}
+
+.bloc-activites {
+    width: 302px;
+    height: 444px;
+    border-radius: 20px;
+    box-shadow: 6Px 6px 25px rgba(0,0,0,0.5);
+}
+
+.bloc-activites img {
+    height: 389px;
+    width: 302px;
+    border-radius: 20px 20px 0 0;
+}
+
+.bloc-activites h4 {
+    margin-left: 10px;
+}
+
+/* fin section activité */
+/* debut footer */
+
+footer {
+    width: 100%;
+    height: 225px;
+    background-color: #F2F2F2;
+    margin: 20px 0 20px 0;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer li {
+    list-style: none;
 }
