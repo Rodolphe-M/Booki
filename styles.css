@@ -9,7 +9,7 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 35px;
+    margin: 0px;
 }
 
 h1,
@@ -52,8 +52,8 @@ nav ul {
 }
 
 nav li {
-    margin: 10px 30px 20px 30px;
-    padding: auto;
+    margin 10px;
+    padding: 20px 20px 20px 20px;
     list-style: none;
 }
 
@@ -64,18 +64,31 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav li:hover {
     color: #0065FC;
     border-top: solid 2px #0065FC;
+}
+
+nav a:hover {
+    color:#0065FC;
 }
 
 img {
     object-fit: cover;
 }
+
 /* header */
+
+.intro-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
 
 .intro-section p {
     margin: 10px 0 20px 0;
+    width: 100%;
 }
 
 
@@ -83,6 +96,8 @@ img {
 
 .formulaire-recherche {
     display: flex;
+    width: 100%;
+    margin-left: 30px;
 }
 
 .formulaire-recherche ::before {
@@ -138,13 +153,22 @@ input {
 /* debut filtre recherche*/
 
 .container-filtre-recherche {
-    height: 100px;
+    min-width: auto;
+    height: fit-content;
     display: flex;
     align-items: center;
     font-weight: bolder;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container-filtre-recherche p {
+    width: 100%;
+    height: 21px;
 }
 
 .bloc-filtre {
+    min-width: 20%;
     height: 50px;
     padding: 0px 10px;
     margin: 10px;
@@ -161,7 +185,7 @@ input {
 }
 
 .bloc-filtre p {
-    width: auto;
+    width: 100%;
     margin: auto;
     padding-right: 10px;
     ;
@@ -184,10 +208,12 @@ input {
 /* debut partie bas header */
 
 .phrase-info {
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     height: 50px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
 
 }
 
@@ -201,6 +227,7 @@ input {
     border-color: lightgrey;
     border-style: solid
 }
+
 .phrase-info ::before {
     position: relative;
     left: 9px;
@@ -209,6 +236,7 @@ input {
 
 .phrase-info p {
     font-size: 16px;
+    margin-top: 5px;
 }
 
 /* fin partie bas header */
@@ -217,22 +245,26 @@ input {
 section {
     width: 65%
 }
+
 .section-hebergement-aside {
     display: flex;
     justify-content: space-around;
 }
+
 .section-hebergement {
     width: 100%;
-    height: 625px;
+    height: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .section-hebergement h2 {
     width: 100%;
     height: 26px;
+    padding: 0px 0 20px 0;
 }
 
 .section-hebergement a {
@@ -246,7 +278,7 @@ section {
 }
 
 .section-hebergement a:hover {
-    color:#0065FC
+    color: #0065FC
 }
 
 .hotel-marseille {
@@ -259,7 +291,10 @@ section {
     background: white;
     border-radius: 20px;
     width: 28%;
-    box-shadow: 4Px 4px 15px rgba(0,0,0,0.2);
+    min-width: 246px;
+    max-width: fit-content;
+    box-shadow: 4Px 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px;
 }
 
 
@@ -267,15 +302,17 @@ section {
     width: 96%;
     height: 124px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 span {
-    color:#DEEBFF;
+    color: #DEEBFF;
 }
 
 .text-hebergement {
     width: 90%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -293,7 +330,8 @@ span {
 
 .rating-hebergement {
     font-size: small;
-    color:#0065FC;
+    color: #0065FC;
+    margin-top: 2px;
 }
 
 /* fin section hebergement */
@@ -321,7 +359,7 @@ aside {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-} 
+}
 
 .titre-aside ::before {
     position: relative;
@@ -337,7 +375,7 @@ aside {
     background-color: white;
     border-radius: 20px;
     margin: 15px 10px 15px 10px;
-    box-shadow: 4Px 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 4Px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hotel-populaire img {
@@ -346,7 +384,7 @@ aside {
     display: flex;
     border-radius: 20px 0px 0px 20px;
     margin: 5px;
-   
+
 }
 
 .right-bloc-populaire {
@@ -357,7 +395,7 @@ aside {
     justify-content: space-between;
 }
 
-.comment-hotel h4{
+.comment-hotel h4 {
     margin: 15px 10px 0 10px;
 }
 
@@ -367,7 +405,7 @@ aside {
 
 .rating-populaire {
     font-size: small;
-    color:#0065FC;
+    color: #0065FC;
     margin: 0 0 10px 10px
 }
 
@@ -376,6 +414,7 @@ aside {
 
 #activites {
     width: 100%;
+    margin-left: 10px;
 }
 
 .section-activites {
@@ -392,7 +431,7 @@ aside {
     width: 28%;
     height: 444px;
     border-radius: 20px;
-    box-shadow: 4Px 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 4Px 4px 15px rgba(0, 0, 0, 0.2);
     margin-right: 40px;
 }
 
@@ -411,7 +450,7 @@ aside {
 
 footer {
     width: 100%;
-    height: 225px;
+    height: fit-content;
     background-color: #F2F2F2;
     margin-top: 50px;
 }
@@ -431,13 +470,362 @@ footer {
     margin: 15px 0 15px 0;
 }
 
-@media screen and (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 668px) {
+
+    main {
+        width: 100%;
+    }
+
     .section-hebergement-aside {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #logo {
+        width: 100%;
+        object-fit: scale-down;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        Width: 50%;
+        padding:20px 0 20px 0;
+    }
+
+    nav li:hover {
+        color: #0065FC;
+        border-bottom: solid 2px #0065FC;
+    }
+    
+    nav a:hover {
+        color:#0065FC;
+    }
+
+    nav h1 {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        height: 250px;
+    }
+
+    section {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section-hebergement img {
+        height: 124px;
+        margin: 5px;
+    }
+    .section-hebergement h2 {
+        width: 100%;
+    }
+
+    .section-hebergement a{
+        width: 100%;
+    }
+
+    .hotel-marseille {
+        width: 30%;
+        height: 28%;
+    }
+
+
+    .section-hotel-populaire {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .hotel-populaire {
+        width: 30%;
+        height: 144px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hotel-populaire img {
+        min-width: 30%;
+        max-width: 40%;
+        height: 94%;
+    }
+
+    .titre-aside {
+        width: 100%;
+        height: 26px;
+    }
+
+
+    .rating-hebergement {
+        font-size: x-small;
+        color: #0065FC;
+        margin-top: 2px;
+    }
+
+    .right-bloc-populaire {
+        width: 100%;
+    }
+
+    .hotel-populaire h4 {
+        font-size: 14px;
+    }
+
+    .hotel-populaire p {
+        font-size: 13px;
+    }
+
+    #activites {
+        width: 100%;
+        margin-left: 10px;
+    }
+    
+    .section-activites {
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    
+    .titre-activites {
+        margin: 30px 0 20px 0;
+    }
+    
+    .bloc-activites {
+        width: 20%;
+        height: 270px;
+        border-radius: 20px;
+        box-shadow: 4Px 4px 15px rgba(0, 0, 0, 0.2);
+        margin-right: 40px;
+    }
+    
+    .bloc-activites img {
+        height: 200px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+}
+
+/* Small devices (phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+
+    main {
+        width: 100%;
+    }
+
+    .section-hebergement-aside {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 95%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #logo {
+        width: 100%;
+        object-fit: scale-down;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        Width: 50%;
+        padding:20px 0 20px 0;
+    }
+
+    nav li:hover {
+        color: #0065FC;
+        border-bottom: solid 2px #0065FC;
+    }
+    
+    nav a:hover {
+        color:#0065FC;
+    }
+
+    nav h1 {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        height: fit-content;
+    }
+
+    section {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section-hebergement {
+        background-color: #DEEBFF;
+        border-radius: 0%;
+    }
+
+    .section-hebergement img {
+        height: 124px;
+        margin: 5px;
+    }
+    .section-hebergement h2 {
+        width: 100%;
+    }
+
+    .section-hebergement a{
+        width: 100%;
+    }
+
+    .hotel-marseille {
+        width: 30%;
+        height: 28%;
+    }
+
+    aside {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .section-hotel-populaire {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .hotel-populaire {
+        width: 95%;
+        height: 144px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hotel-populaire img {
+        min-width: 30%;
+        max-width: 40%;
+        height: 94%;
+    }
+
+    .titre-aside {
+        width: 100%;
+        height: 26px;
+    }
+
+
+    .rating-hebergement {
+        font-size: x-small;
+        color: #0065FC;
+        margin-top: 2px;
+    }
+
+    .right-bloc-populaire {
+        width: 100%;
+    }
+
+    .hotel-populaire h4 {
+        font-size: 14px;
+    }
+
+    .hotel-populaire p {
+        font-size: 13px;
+    }
+
+    #activites {
+        width: 100%;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-activites {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .titre-activites {
+        margin: 30px 0 20px 0;
+        width: 100%;
+    }
+    
+    .bloc-activites {
+        width: 95%;
+        height: 200px;
+        border-radius: 20px;
+        box-shadow: 4Px 4px 15px rgba(0, 0, 0, 0.2);
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .bloc-activites img {
+        height: 141px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
     }
 }
