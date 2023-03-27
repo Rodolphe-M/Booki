@@ -318,7 +318,6 @@ section {
     background: white;
     border-radius: 20px;
     width: 30%;
-   
     box-shadow: 4Px 4px 15px rgba(0, 0, 0, 0.2);
     margin: 5px;
 }
@@ -485,22 +484,40 @@ footer {
     width: 100%;
     height: fit-content;
     background-color: #F2F2F2;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .footer {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    height: 225px;
 }
 
 .footer ul {
     font-size: 18px;
-    margin: 30px 90px 10px 50px;
+    margin: 10px 10px 10px 60px;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer li {
+.footer-list li {
     font-size: 16px;
     list-style: none;
-    margin: 15px 0 15px 0;
+    margin: 5px 0 5px 0;
+}
+
+.footer-titre {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -892,12 +909,14 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 22px;
     }
     
     .section-activites {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-wrap: wrap;
+        width: 100%;
     }
     
     .titre-activites {
@@ -924,6 +943,13 @@ footer {
     .footer {
         display: flex;
         flex-direction: column;
-
+        height: fit-content;
+        width: 100%;
     }
+
+    .footer-list {
+        width: 98%;
+        height: fit-content;
+    }
+
 }
